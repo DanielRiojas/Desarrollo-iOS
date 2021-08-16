@@ -133,24 +133,43 @@ print("-> ", triangleArea(base: 3, heigh: 4))
 
 // Modifica la función para que el nombre de los parámetros al declarar la función sea diferente
 // del nombre de los parámetros al llamarla
+func triangleArea2(base : Int, times heigh : Int) -> Int {
+    base * heigh / 2;
+}
 
 // Escribe la llamada de la función
+print("-> ", triangleArea2(base: 3, times: 4))
 
 // Modifica la función para que no necesites poner nombres a los parámetros para llamarla
-
+func triangleArea3(_ base : Int, _ heigh : Int) -> Int {
+    base * heigh / 2;
+}
 // Escribe la llamada de la función
+print("-> ", triangleArea3(3, 4))
 
 // Escribe una función que tenga un parámetro con valor default
+func defaultVariable(var1 : String = "Hola Mundo"){
+    print(var1)
+}
 
 // Escribe la llamada de dicha función sin enviar valor al parámetro que tiene valor default
+defaultVariable()
 
 //Ejercicio 2. Más funciones
 
 // Escribe una función que tenga como valor de retorno 2 valores (una tupla)
+func tupla(num1 : Int, num2 : Int) -> (sum: Int, mult: Int){
+    let sum = num1 + num2
+    let mult = num1 * num2
+    
+    return(sum, mult)
+}
 
 // Escribe la llamada de la función
+let call = tupla(num1: 5, num2: 4)
 
 // Muestra en la pantalla los valores de la tupla que recibiste como valor de retorno
+print(call.sum, " & ", call.mult)
 
 //Ejercicio 3. Funciones como parámetro
 // Escribe la función suma que reciba 2 números y regrese su suma
