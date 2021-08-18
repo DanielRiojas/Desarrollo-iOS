@@ -28,6 +28,15 @@ class ViewController: UIViewController {
             
             tfDolares.text = String(dolares)
         }
+        else {
+            let alert = UIAlertController(title: "Error", message: "Los campos deben tener valor númerico", preferredStyle: .alert)
+            
+            let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            
+            alert.addAction(action)
+            
+            present(alert, animated: true, completion: nil)
+        }
         
     }
     
