@@ -25,7 +25,7 @@ class ViewController: UIViewController {
 
 
     @IBAction func saludar(_ sender: UIButton) {
-        lbMensaje.text = "Hola " + tfNombre.text!
+        lbMensajeSaludo.text = "Hola " + tfNombre.text!
     }
     
     @IBAction func quitaTeclado() {
