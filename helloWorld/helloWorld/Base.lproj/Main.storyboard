@@ -47,6 +47,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.7803921568627451" green="0.73543802567790839" blue="0.52172029597239689" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                     </view>
                     <connections>
                         <outlet property="lbMensaje" destination="hLY-s3-f1M" id="ST0-oY-jpy"/>

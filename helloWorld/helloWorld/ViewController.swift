@@ -16,11 +16,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(quitaTeclado))
+        
+        view.addGestureRecognizer(tap)
+        
     }
 
 
     @IBAction func saludar(_ sender: UIButton) {
         lbMensaje.text = "Hola " + tfNombre.text!
     }
+    
+    @IBAction func quitaTeclado() {
+        view.endEditing(true)
+    }
+    
 }
 
