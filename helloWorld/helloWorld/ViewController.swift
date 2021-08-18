@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     
     @IBOutlet weak var tfNombre: UITextField!
-    @IBOutlet weak var lbMensaje: UILabel!
+    @IBOutlet weak var lbMensajeSaludo: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
