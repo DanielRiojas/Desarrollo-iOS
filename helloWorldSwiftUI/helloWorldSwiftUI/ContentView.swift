@@ -12,15 +12,38 @@ struct ContentView: View {
     @State var mensaje : String = "Hola "
     var body: some View {
         VStack {
-            Text("Teclea tu nombre: ").padding()
+            Text("Teclea tu nombre: ")
+                .font(.largeTitle)
+                .fontWeight(.semibold)
+                .padding(.top, 100)
             TextField("Nombre", text: $nombre)
+                .padding()
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+            Spacer()
             Button(action: {
                 mensaje = "Hola " + nombre
             }) {
                 Text("Saludar")
+                    .fontWeight(.semibold)
             }
+            .padding()
+            .background(Color.white)
+            .cornerRadius(5)
+            Spacer()
             Text(mensaje)
+                .padding(.bottom, 100)
         }
+        .background(Color.blue)
+        .edgesIgnoringSafeArea(.all)
+        .onTapGesture {
+            UIApplication.shared.endEditing()
+        }
+    }
+}
+
+extension UIApplication {
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
 
