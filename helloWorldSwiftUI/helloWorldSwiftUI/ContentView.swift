@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var nombre: String = ""
+    @State var mensaje : String = "Hola "
     var body: some View {
         VStack {
-            Text("Hello")
-            Text("World!!")
-        }.padding()
+            Text("Teclea tu nombre: ").padding()
+            TextField("Nombre", text: $nombre)
+            Button(action: {
+                mensaje = "Hola " + nombre
+            }) {
+                Text("Saludar")
+            }
+            Text(mensaje)
+        }
     }
 }
 
