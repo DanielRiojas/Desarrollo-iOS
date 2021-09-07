@@ -52,20 +52,13 @@
                                         <rect key="frame" x="0.0" y="331" width="375" height="331"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eJ1-h6-2od">
-                                                <rect key="frame" x="104" y="30" width="167" height="152"/>
+                                                <rect key="frame" x="104" y="8" width="167" height="152"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MrC-Kd-WXC">
-                                                <rect key="frame" x="160" y="202" width="55" height="28"/>
+                                                <rect key="frame" x="28" y="168" width="283" height="28"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dC9-Xa-e5M">
-                                                <rect key="frame" x="33" y="261" width="50" height="26"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -78,6 +71,13 @@
                                                     <segue destination="zvg-eM-yUF" kind="presentation" identifier="sConfig" id="eta-jq-pBu"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dC9-Xa-e5M">
+                                                <rect key="frame" x="28" y="204" width="201" height="119"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
@@ -98,7 +98,8 @@
                     <connections>
                         <outlet property="bEsfera" destination="nUQ-bU-u34" id="T2V-Ft-jfP"/>
                         <outlet property="bPrisma" destination="rfy-jp-YZh" id="r55-yk-Eo8"/>
-                        <outlet property="imgGeo" destination="0dT-xh-JQ7" id="m3k-NY-Cpg"/>
+                        <outlet property="bottomView" destination="0dT-xh-JQ7" id="si2-TR-EsZ"/>
+                        <outlet property="imgGeo" destination="eJ1-h6-2od" id="EgE-JU-6Al"/>
                         <outlet property="lb1" destination="MrC-Kd-WXC" id="uq0-RH-Z25"/>
                         <outlet property="lb2" destination="dC9-Xa-e5M" id="qBa-Um-ZHU"/>
                     </connections>
@@ -143,11 +144,17 @@
                                 <rect key="frame" x="64" y="550" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Area"/>
+                                <connections>
+                                    <segue destination="9kD-Zf-Bf2" kind="unwind" unwindAction="unwindPrismaWithSegue:" id="szG-jc-7Ds"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSj-Xi-llo">
                                 <rect key="frame" x="274" y="550" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Volumen"/>
+                                <connections>
+                                    <segue destination="9kD-Zf-Bf2" kind="unwind" unwindAction="unwindPrismaWithSegue:" id="xcZ-jU-R63"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ancho" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T33-a8-hIV">
                                 <rect key="frame" x="156" y="453" width="85" height="34"/>
@@ -165,8 +172,17 @@
                         <viewLayoutGuide key="safeArea" id="P9f-0o-1bw"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     </view>
+                    <connections>
+                        <outlet property="btArea" destination="Gon-B6-9jf" id="afW-K4-FdN"/>
+                        <outlet property="btVlumen" destination="CSj-Xi-llo" id="6mc-2C-TZD"/>
+                        <outlet property="imgPrisma" destination="fMy-ic-Gzx" id="EVy-Xy-t93"/>
+                        <outlet property="tfAlto" destination="C1V-ae-RGi" id="oeC-Mn-e5S"/>
+                        <outlet property="tfAncho" destination="T33-a8-hIV" id="oMa-SO-8Bb"/>
+                        <outlet property="tfLargo" destination="VlZ-9v-xJ3" id="3Oa-ON-pxq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nKR-J0-wXH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="9kD-Zf-Bf2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="968.79999999999995" y="492.50374812593708"/>
         </scene>
@@ -214,6 +230,9 @@
                                 <rect key="frame" x="59" y="573" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Area"/>
+                                <connections>
+                                    <segue destination="PJ0-kk-p1h" kind="unwind" unwindAction="unwindEsferaWithSegue:" id="eGw-NS-UZP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6gi-2M-zFj"/>
@@ -248,10 +267,16 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vd-eL-Ifn">
                                                 <rect key="frame" x="0.0" y="0.0" width="162.5" height="298.5"/>
                                                 <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <connections>
+                                                    <segue destination="I0I-4I-ari" kind="unwind" unwindAction="unwindConfigWithSegue:" id="EWe-6q-tss"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkv-tW-JLY">
                                                 <rect key="frame" x="172.5" y="0.0" width="162.5" height="298.5"/>
                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                <connections>
+                                                    <segue destination="I0I-4I-ari" kind="unwind" unwindAction="unwindConfigWithSegue:" id="13u-Qw-zIk"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -261,10 +286,16 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIJ-Bh-aVR">
                                                 <rect key="frame" x="0.0" y="0.0" width="162.5" height="298.5"/>
                                                 <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <connections>
+                                                    <segue destination="I0I-4I-ari" kind="unwind" unwindAction="unwindConfigWithSegue:" id="3Lq-fZ-nTN"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJf-AE-zgh">
                                                 <rect key="frame" x="172.5" y="0.0" width="162.5" height="298.5"/>
                                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                <connections>
+                                                    <segue destination="I0I-4I-ari" kind="unwind" unwindAction="unwindConfigWithSegue:" id="GyT-9f-g1z"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -281,8 +312,15 @@
                             <constraint firstItem="QJz-by-mNZ" firstAttribute="top" secondItem="cXt-V0-iM8" secondAttribute="top" constant="20" id="e40-wU-m3b"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bt1" destination="5vd-eL-Ifn" id="Hzx-8t-0KN"/>
+                        <outlet property="bt2" destination="Bkv-tW-JLY" id="3cX-l3-j69"/>
+                        <outlet property="bt3" destination="lIJ-Bh-aVR" id="y1e-om-3gv"/>
+                        <outlet property="bt4" destination="rJf-AE-zgh" id="7cC-9w-1Eo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MnW-23-WMw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="I0I-4I-ari" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1749.5999999999999" y="55.322338830584712"/>
         </scene>

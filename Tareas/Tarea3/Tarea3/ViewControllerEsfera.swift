@@ -26,8 +26,15 @@ class ViewControllerEsfera: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(sender as! UIButton) == btArea {
             let vistIni = segue.destination as! ViewController
-            vistIni.imgGeo = imgEsfera
+            vistIni.img = imgEsfera!
             vistIni.radio = tfRadio.text!
+            vistIni.op = 0
+        }
+        else if (sender as! UIButton) == btVolumen {
+            let vistIni = segue.destination as! ViewController
+            vistIni.img = imgEsfera!
+            vistIni.radio = tfRadio.text!
+            vistIni.op = 1
         }
     }
 
