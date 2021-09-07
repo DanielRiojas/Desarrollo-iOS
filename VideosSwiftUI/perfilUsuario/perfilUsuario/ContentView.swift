@@ -12,6 +12,7 @@ struct ContentView: View {
     @State var nombre : String = "Donald"
     @State var correo : String = "donald@gmail.com"
     @State var mostrarFoto : Bool = false
+    @State var mostrarEditar : Bool = false
     
     var body: some View {
         VStack (spacing: 0) {
@@ -37,6 +38,18 @@ struct ContentView: View {
                     Text("Nombre: " + nombre)
                         .padding()
                     Text("Correo: " + correo)
+                    Button(action: {
+                        mostrarEditar = true
+                    }) {
+                        Text("Editar")
+                    }
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+                    .sheet(isPresented: $mostrarEditar, content: {
+                        ViewEditar(nombre: $nombre, correo: $correo)
+                    })
                 }
             }
         }

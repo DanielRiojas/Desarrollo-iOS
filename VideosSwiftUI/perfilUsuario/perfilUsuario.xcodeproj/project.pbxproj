@@ -12,6 +12,7 @@
 		3E1AA03826E6C28300D16E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E1AA03726E6C28300D16E2E /* Assets.xcassets */; };
 		3E1AA03B26E6C28300D16E2E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E1AA03A26E6C28300D16E2E /* Preview Assets.xcassets */; };
 		3E1AA04426E6C9D900D16E2E /* VistaFoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1AA04326E6C9D900D16E2E /* VistaFoto.swift */; };
+		3E1AA04726E6EFE700D16E2E /* ViewEditar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1AA04626E6EFE700D16E2E /* ViewEditar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3E1AA03A26E6C28300D16E2E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3E1AA03C26E6C28300D16E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E1AA04326E6C9D900D16E2E /* VistaFoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaFoto.swift; sourceTree = "<group>"; };
+		3E1AA04626E6EFE700D16E2E /* ViewEditar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEditar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				3E1AA03326E6C28200D16E2E /* perfilUsuarioApp.swift */,
 				3E1AA03526E6C28200D16E2E /* ContentView.swift */,
+				3E1AA04626E6EFE700D16E2E /* ViewEditar.swift */,
 				3E1AA04326E6C9D900D16E2E /* VistaFoto.swift */,
 				3E1AA03726E6C28300D16E2E /* Assets.xcassets */,
 				3E1AA03C26E6C28300D16E2E /* Info.plist */,
@@ -144,6 +147,7 @@
 				3E1AA03626E6C28200D16E2E /* ContentView.swift in Sources */,
 				3E1AA03426E6C28200D16E2E /* perfilUsuarioApp.swift in Sources */,
 				3E1AA04426E6C9D900D16E2E /* VistaFoto.swift in Sources */,
+				3E1AA04726E6EFE700D16E2E /* ViewEditar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
