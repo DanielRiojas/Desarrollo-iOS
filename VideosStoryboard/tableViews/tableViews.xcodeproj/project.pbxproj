@@ -14,6 +14,7 @@
 		3E34C7F626F8F6A100802F4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E34C7F526F8F6A100802F4A /* Assets.xcassets */; };
 		3E34C7F926F8F6A100802F4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E34C7F726F8F6A100802F4A /* LaunchScreen.storyboard */; };
 		3E34C80226F8F95000802F4A /* Jugador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E34C80126F8F95000802F4A /* Jugador.swift */; };
+		3E34C80526F9039100802F4A /* ViewControllerDetalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E34C80426F9039100802F4A /* ViewControllerDetalle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3E34C7F826F8F6A100802F4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E34C7FA26F8F6A100802F4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E34C80126F8F95000802F4A /* Jugador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jugador.swift; sourceTree = "<group>"; };
+		3E34C80426F9039100802F4A /* ViewControllerDetalle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDetalle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				3E34C7F026F8F69C00802F4A /* ViewController.swift */,
 				3E34C80126F8F95000802F4A /* Jugador.swift */,
 				3E34C7F226F8F69D00802F4A /* Main.storyboard */,
+				3E34C80426F9039100802F4A /* ViewControllerDetalle.swift */,
 				3E34C7F526F8F6A100802F4A /* Assets.xcassets */,
 				3E34C7F726F8F6A100802F4A /* LaunchScreen.storyboard */,
 				3E34C7FA26F8F6A100802F4A /* Info.plist */,
@@ -142,6 +145,7 @@
 			files = (
 				3E34C80226F8F95000802F4A /* Jugador.swift in Sources */,
 				3E34C7F126F8F69C00802F4A /* ViewController.swift in Sources */,
+				3E34C80526F9039100802F4A /* ViewControllerDetalle.swift in Sources */,
 				3E34C7ED26F8F69C00802F4A /* AppDelegate.swift in Sources */,
 				3E34C7EF26F8F69C00802F4A /* SceneDelegate.swift in Sources */,
 			);

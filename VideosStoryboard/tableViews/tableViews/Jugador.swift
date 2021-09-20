@@ -10,9 +10,11 @@ import UIKit
 class Jugador: NSObject {
     var nombre : String = ""
     var puntos : Int = 0
+    var foto : UIImage!
     
-    init(nombre : String, puntos: Int){
+    init(nombre : String, puntos: Int, foto: UIImage!){
         self.nombre = nombre
         self.puntos = puntos
+        self.foto = foto
     }
 }
