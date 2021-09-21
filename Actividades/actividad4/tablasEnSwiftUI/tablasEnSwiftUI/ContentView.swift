@@ -21,8 +21,12 @@ struct ContentView: View {
         NavigationView {
             List{
                 ForEach (listaDeportes, id:\.self) { deporte in
-                    celdaDeporte(titulo: deporte.nombre, imagen: deporte.imagen)
-
+                    NavigationLink(
+                        destination: DetalleDeporte(titulo: deporte.nombre, imagen: deporte.imagen),
+                        label: {
+                            celdaDeporte(titulo: deporte.nombre, imagen: deporte.imagen)
+                        })
+                    
                 }
             }
             .navigationTitle("Deportes")

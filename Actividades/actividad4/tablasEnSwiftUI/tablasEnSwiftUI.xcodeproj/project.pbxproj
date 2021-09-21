@@ -12,6 +12,7 @@
 		3E7F422A26FA818C00CF6813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7F422926FA818C00CF6813 /* Assets.xcassets */; };
 		3E7F422D26FA818C00CF6813 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7F422C26FA818C00CF6813 /* Preview Assets.xcassets */; };
 		3E7F423626FA81AB00CF6813 /* Deporte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7F423526FA81AB00CF6813 /* Deporte.swift */; };
+		3E7F423926FA8CFF00CF6813 /* DetalleDeporte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7F423826FA8CFF00CF6813 /* DetalleDeporte.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3E7F422C26FA818C00CF6813 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3E7F422E26FA818C00CF6813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E7F423526FA81AB00CF6813 /* Deporte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deporte.swift; sourceTree = "<group>"; };
+		3E7F423826FA8CFF00CF6813 /* DetalleDeporte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleDeporte.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				3E7F422526FA818A00CF6813 /* tablasEnSwiftUIApp.swift */,
 				3E7F422726FA818A00CF6813 /* ContentView.swift */,
+				3E7F423826FA8CFF00CF6813 /* DetalleDeporte.swift */,
 				3E7F423526FA81AB00CF6813 /* Deporte.swift */,
 				3E7F422926FA818C00CF6813 /* Assets.xcassets */,
 				3E7F422E26FA818C00CF6813 /* Info.plist */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E7F422826FA818A00CF6813 /* ContentView.swift in Sources */,
+				3E7F423926FA8CFF00CF6813 /* DetalleDeporte.swift in Sources */,
 				3E7F422626FA818A00CF6813 /* tablasEnSwiftUIApp.swift in Sources */,
 				3E7F423626FA81AB00CF6813 /* Deporte.swift in Sources */,
 			);
