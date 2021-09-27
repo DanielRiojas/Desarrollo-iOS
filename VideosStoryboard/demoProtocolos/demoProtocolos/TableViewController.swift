@@ -49,7 +49,14 @@ class TableViewController: UITableViewController, protocoloAgregaJuagdor {
 
         // Configure the cell...
         cell.textLabel?.text = listaJugadores[indexPath.row].nombre
-        cell.imageView?.image = listaJugadores[indexPath.row].foto
+        
+        if let foto = listaJugadores[indexPath.row].foto {
+            cell.imageView?.image = foto
+        }
+        else {
+            cell.imageView?.image = UIImage(named: "alas")
+        }
+        
 
         return cell
     }
