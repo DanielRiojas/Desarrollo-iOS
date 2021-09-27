@@ -40,10 +40,13 @@ class TableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath) as! CustomTableViewCell
 
         // Configure the cell...
-        cell.textLabel?.text = listaiPhones[indexPath.row].tipo
+        cell.lbTipo.text = listaiPhones[indexPath.row].tipo
+        cell.lbCapacidad.text = listaiPhones[indexPath.row].capacidad
+        cell.lbPrecio.text = String(listaiPhones[indexPath.row].precio)
+        cell.imgFoto.image = listaiPhones[indexPath.row].foto
 
         return cell
     }
@@ -86,6 +89,10 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the item to be re-orderable.
         return true
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
     }
     
 
