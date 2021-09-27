@@ -15,6 +15,7 @@
 		3E7F4254270251B000CF6813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7F4252270251B000CF6813 /* LaunchScreen.storyboard */; };
 		3E7F425D2702527900CF6813 /* Jugador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7F425C2702527900CF6813 /* Jugador.swift */; };
 		3E7F42602702532100CF6813 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7F425F2702532100CF6813 /* TableViewController.swift */; };
+		3E7F426327025B1700CF6813 /* ViewControllerAgregar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7F426227025B1700CF6813 /* ViewControllerAgregar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3E7F4255270251B000CF6813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E7F425C2702527900CF6813 /* Jugador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jugador.swift; sourceTree = "<group>"; };
 		3E7F425F2702532100CF6813 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		3E7F426227025B1700CF6813 /* ViewControllerAgregar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAgregar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				3E7F4249270251AD00CF6813 /* SceneDelegate.swift */,
 				3E7F424B270251AD00CF6813 /* ViewController.swift */,
 				3E7F424D270251AD00CF6813 /* Main.storyboard */,
+				3E7F426227025B1700CF6813 /* ViewControllerAgregar.swift */,
 				3E7F425C2702527900CF6813 /* Jugador.swift */,
 				3E7F425F2702532100CF6813 /* TableViewController.swift */,
 				3E7F4250270251B000CF6813 /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 			files = (
 				3E7F425D2702527900CF6813 /* Jugador.swift in Sources */,
 				3E7F424C270251AD00CF6813 /* ViewController.swift in Sources */,
+				3E7F426327025B1700CF6813 /* ViewControllerAgregar.swift in Sources */,
 				3E7F4248270251AD00CF6813 /* AppDelegate.swift in Sources */,
 				3E7F42602702532100CF6813 /* TableViewController.swift in Sources */,
 				3E7F424A270251AD00CF6813 /* SceneDelegate.swift in Sources */,

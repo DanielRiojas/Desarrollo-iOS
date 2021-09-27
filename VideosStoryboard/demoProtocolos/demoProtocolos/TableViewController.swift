@@ -7,7 +7,9 @@
 
 import UIKit
 
-class TableViewController: UITableViewController {
+class TableViewController: UITableViewController, protocoloAgregaJuagdor {
+    
+    
     
     var listaJugadores = [
         Jugador(nombre: "Eren", puntos: 1200, foto: UIImage(named: "eren")),
@@ -95,10 +97,22 @@ class TableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        let vistaDetalle = segue.destination as! ViewController
-        let indice = tableView.indexPathForSelectedRow!
-        vistaDetalle.unJugador = listaJugadores[indice.row]
+        if segue.identifier == "mostrar" {
+            let vistaDetalle = segue.destination as! ViewController
+            let indice = tableView.indexPathForSelectedRow!
+            vistaDetalle.unJugador = listaJugadores[indice.row]
+        }
+        else {
+            let vistaAgregar = segue.destination as! ViewControllerAgregar
+            vistaAgregar.delegado = self
+            
+        }
     }
     
+    //MARK: - Mètodos del protocolo Agrega Jugador
+    func agregaJugador(jug: Jugador) {
+        listaJugadores.append(jug)
+        tableView.reloadData()
+    }
 
 }
